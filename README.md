@@ -10,29 +10,32 @@ The Android application is built natively using Kotlin with a layered architectu
 
 ## Screenshots
 
+### Application Flow
+
+<p align="center">
+  <img src="./screenshots/VexarDrive-Splash.jpeg" width="250" alt="VexarDrive Splash Screen">
+  <img src="./screenshots/VexarDrive-Register.jpeg" width="250" alt="VexarDrive Register">
+  <img src="./screenshots/VexarDrive-Login.jpeg" width="250" alt="VexarDrive Login">
+</p>
+
 ### Manager Dashboard
 
-![VexarDrive Dashboard](./screenshots/VexarDrive-Dashboard.jpeg)
+<p align="center">
+  <img src="./screenshots/VexarDrive-Dashboard.jpeg" width="280" alt="VexarDrive Manager Dashboard">
+</p>
 
 ### Vehicle Management
 
-![Vehicles](./screenshots/VexarDrive-Vehicles.jpeg)
-
-![Vehicle Details](./screenshots/VexarDrive-VehicleDetails.jpeg)
+<p align="center">
+  <img src="./screenshots/VexarDrive-Vehicles.jpeg" width="280" alt="VexarDrive Vehicles">
+  <img src="./screenshots/VexarDrive-VehicleDetails.jpeg" width="280" alt="VexarDrive Vehicle Details">
+</p>
 
 ### Driver Management
 
-![Drivers](./screenshots/VexarDrive-Drivers.jpeg)
-
-### Authentication
-
-![Login](./screenshots/VexarDrive-Login.jpeg)
-
-![Register](./screenshots/VexarDrive-Register.jpeg)
-
-### Splash Screen
-
-![Splash Screen](./screenshots/VexarDrive-Splash.jpeg)
+<p align="center">
+  <img src="./screenshots/VexarDrive-Drivers.jpeg" width="280" alt="VexarDrive Drivers">
+</p>
 ## Implemented Features
 
 ### Authentication
