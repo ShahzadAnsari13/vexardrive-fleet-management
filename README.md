@@ -12,35 +12,27 @@ The Android application is built natively using Kotlin with a layered architectu
 
 ### Manager Dashboard
 
-![VexarDrive Dashboard](VexarDrive-Dashboard.jpeg)
+![VexarDrive Dashboard](./VexarDrive-Dashboard.jpeg)
 
 ### Vehicle Management
 
-![Vehicles](VexarDrive-Vehicles.jpeg)
+![Vehicles](./VexarDrive-Vehicles.jpeg)
 
-![Vehicle Details](VexarDrive-VehicleDetails.jpeg)
+![Vehicle Details](./VexarDrive-VehicleDetails.jpeg)
 
 ### Driver Management
 
-![Drivers](VexarDrive-Drivers.jpeg)
-
-![Driver Details](VexarDrive-DriverDetails.jpeg)
+![Drivers](./VexarDrive-Drivers.jpeg)
 
 ### Authentication
 
-![Login](VexarDrive-Login.jpeg)
+![Login](./VexarDrive-Login.jpeg)
 
-![Register](VexarDrive-Register.jpeg)
+![Register](./VexarDrive-Register.jpeg)
 
 ### Splash Screen
 
-![Splash Screen](VexarDrive-Splash.jpeg)
-
-### Driver Management
-
-![Drivers](screenshots/VexarDrive-Drivers.jpg)
-
-![Driver Details](screenshots/VexarDrive-DriverDetails.jpg)
+![Splash Screen](./VexarDrive-Splash.jpeg)
 ## Implemented Features
 
 ### Authentication
