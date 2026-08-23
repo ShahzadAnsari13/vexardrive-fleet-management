@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerDriverList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Item 1 -->
+            <include layout="@layout/item_driver_shimmer" />
+
+            <!-- Item 2 -->
+            <include layout="@layout/item_driver_shimmer" />
+
+            <!-- Item 3 -->
+            <include layout="@layout/item_driver_shimmer" />
+
+            <!-- Item 4 -->
+            <include layout="@layout/item_driver_shimmer" />
+
+            <!-- Item 5 -->
+            <include layout="@layout/item_driver_shimmer" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</LinearLayout>

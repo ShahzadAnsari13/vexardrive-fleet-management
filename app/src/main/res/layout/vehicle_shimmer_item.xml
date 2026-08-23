@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="6dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Vehicle Icon Placeholder -->
+        <View
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_shimmer_card" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="14dp"
+            android:orientation="vertical">
+
+            <!-- Registration -->
+            <View
+                android:layout_width="150dp"
+                android:layout_height="16dp"
+                android:background="@drawable/bg_shimmer" />
+
+            <!-- Vehicle Info -->
+            <View
+                android:layout_width="190dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_shimmer" />
+
+            <!-- Status -->
+            <View
+                android:layout_width="82dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_shimmer_card" />
+
+        </LinearLayout>
+
+        <!-- More Icon -->
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_shimmer" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

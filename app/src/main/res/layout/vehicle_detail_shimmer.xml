@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_shimmer" />
+
+        <View
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_shimmer" />
+
+    </LinearLayout>
+
+    <!-- Vehicle Header Card -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_shimmer_card" />
+
+    <!-- Section Title -->
+    <View
+        android:layout_width="150dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_shimmer" />
+
+    <!-- Information Card -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_shimmer_card" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.VexarDriveFleetManager" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#00695C</item>
+        <item name="colorPrimaryContainer">#E3F5F2</item>
+
+        <item name="android:statusBarColor">#00695C</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

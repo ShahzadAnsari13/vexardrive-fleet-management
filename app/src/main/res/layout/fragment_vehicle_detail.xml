@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFA">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ns_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingBottom="110dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Back"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Vehicle Details"
+                    android:textColor="#1A1D1F"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btnMore"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="More options"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_more_vertical" />
+
+            </LinearLayout>
+
+            <!-- Vehicle Header -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="2dp"
+                app:strokeColor="#E5ECEA"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="76dp"
+                        android:layout_height="76dp"
+                        android:background="@drawable/bg_vehicle_icon"
+                        android:contentDescription="Vehicle"
+                        android:padding="16dp"
+                        android:src="@drawable/ic_vehicle" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tvRegistrationNumber"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="KA-01-AB-1234"
+                                android:textColor="#1A1D1F"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/bg_vehicle_status"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="6dp"
+                                android:text="AVAILABLE"
+                                android:textColor="#087F5B"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvVehicleName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Tata Ace"
+                            android:textColor="#374151"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvVehicleType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Truck • 2.5 Ton"
+                            android:textColor="#6B7280"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Vehicle Information -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Vehicle Information"
+                android:textColor="#1A1D1F"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp"
+                app:strokeColor="#E5ECEA"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <!-- Registration -->
+                    <include
+                        layout="@layout/item_vehicle_detail_row"
+                        android:id="@+id/rowRegistration" />
+
+                    <!-- Vehicle Type -->
+                    <include
+                        layout="@layout/item_vehicle_detail_row"
+                        android:id="@+id/rowVehicleType" />
+
+                    <!-- Make -->
+                    <include
+                        layout="@layout/item_vehicle_detail_row"
+                        android:id="@+id/rowMake" />
+
+                    <!-- Model -->
+                    <include
+                        layout="@layout/item_vehicle_detail_row"
+                        android:id="@+id/rowModel" />
+
+                    <!-- Year -->
+                    <include
+                        layout="@layout/item_vehicle_detail_row"
+                        android:id="@+id/rowYear" />
+
+                    <!-- Fuel -->
+                    <include
+                        layout="@layout/item_vehicle_detail_row"
+                        android:id="@+id/rowFuelType" />
+
+                    <!-- Mileage -->
+                    <include
+                        layout="@layout/item_vehicle_detail_row"
+                        android:id="@+id/rowMileage" />
+
+                    <!-- Insurance -->
+                    <include
+                        layout="@layout/item_vehicle_detail_row"
+                        android:id="@+id/rowInsurance" />
+
+                    <!-- Registration Expiry -->
+                    <include
+                        layout="@layout/item_vehicle_detail_row"
+                        android:id="@+id/rowRegistrationExpiry" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/vehicleDetailShimmer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:shimmer_auto_start="true"
+        app:shimmer_duration="1000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            layout="@layout/vehicle_detail_shimmer" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <!-- Bottom Actions -->
+    <LinearLayout
+        android:id="@+id/ll_action"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditVehicle"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="Edit Vehicle"
+            android:textColor="#008A75"
+            android:textSize="14sp"
+            app:cornerRadius="14dp"
+            app:backgroundTint="#EFFAE2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDeactivateVehicle"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="Deactivate"
+            android:textColor="#C62828"
+            android:textSize="14sp"
+            app:backgroundTint="#FFF5F5"
+            app:cornerRadius="14dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

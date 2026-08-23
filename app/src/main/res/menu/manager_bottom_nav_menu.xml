@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/vehiclesFragment"
+        android:icon="@drawable/ic_vehicle"
+        android:title="Vehicles" />
+
+    <item
+        android:id="@+id/driversFragment"
+        android:icon="@drawable/ic_drivers"
+        android:title="Drivers" />
+
+    <item
+        android:id="@+id/tripsFragment"
+        android:icon="@drawable/ic_route"
+        android:title="Trips" />
+
+    <item
+        android:id="@+id/moreFragment"
+        android:icon="@drawable/ic_more"
+        android:title="More" />
+
+</menu>

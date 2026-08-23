@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/manager_nav_graph"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.vexardrive.fleetmanager.presentation.manager.dashboard.fragment.ManagerDashboardFragment"
+        android:label="Dashboard" >
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_assignmentListFragment"
+            app:destination="@id/assignmentListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vehiclesFragment"
+        android:name="com.vexardrive.fleetmanager.presentation.manager.vehicle.fragment.VehiclesFragment"
+        android:label="Vehicles" >
+        <action
+            android:id="@+id/action_vehiclesFragment_to_vehicleDetailFragment"
+            app:destination="@id/vehicleDetailFragment" />
+        <action
+            android:id="@+id/action_vehiclesFragment_to_createVehicleFragment"
+            app:destination="@id/createVehicleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vehicleDetailFragment"
+        android:name="com.vexardrive.fleetmanager.presentation.manager.vehicle.fragment.VehicleDetailFragment"
+        android:label="Vehicle Details">
+
+        <argument
+            android:name="vehicleId"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_vehicleDetailFragment_to_editVehicleFragment"
+            app:destination="@id/editVehicleFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/editVehicleFragment"
+        android:name="com.vexardrive.fleetmanager.presentation.manager.vehicle.fragment.EditVehicleFragment"
+        android:label="Edit Vehicle">
+
+        <argument
+            android:name="vehicleId"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/createVehicleFragment"
+        android:name="com.vexardrive.fleetmanager.presentation.manager.vehicle.fragment.CreateVehicleFragment"
+        android:label="Create Vehicle" />
+
+    <fragment
+        android:id="@+id/driversFragment"
+        android:name="com.vexardrive.fleetmanager.presentation.manager.driver.fragment.DriversFragment"
+        android:label="Drivers">
+
+        <action
+            android:id="@+id/action_driversFragment_to_createDriverFragment"
+            app:destination="@id/createDriverFragment" />
+
+        <action
+            android:id="@+id/action_driversFragment_to_driverDetailsFragment"
+            app:destination="@id/driverDetailsFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/createDriverFragment"
+        android:name="com.vexardrive.fleetmanager.presentation.manager.driver.fragment.CreateDriverFragment"
+        android:label="Create Driver" />
+
+
+    <fragment
+        android:id="@+id/driverDetailsFragment"
+        android:name="com.vexardrive.fleetmanager.presentation.manager.driver.fragment.DriverDetailsFragment"
+        android:label="Driver Details">
+
+        <argument
+            android:name="driverId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_driverDetailsFragment_to_editDriverFragment"
+            app:destination="@id/editDriverFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/editDriverFragment"
+        android:name="com.vexardrive.fleetmanager.presentation.manager.driver.fragment.EditDriverFragment"
+        android:label="Edit Driver">
+
+        <argument
+            android:name="driverId"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/assignmentListFragment"
+        android:name="com.vexardrive.fleetmanager.presentation.manager.assignment.fragment.AssignmentListFragment"
+        android:label="Assignment List">
+
+        <action
+            android:id="@+id/action_assignmentListFragment_to_assignmentDetailsFragment"
+            app:destination="@id/assignmentDetailsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/assignmentDetailsFragment"
+        android:name="com.vexardrive.fleetmanager.presentation.manager.assignment.fragment.AssignmentDetailsFragment"
+        android:label="Assignment Details">
+
+        <argument
+            android:name="assignmentId"
+            app:argType="string" />
+
+    </fragment>
+</navigation>

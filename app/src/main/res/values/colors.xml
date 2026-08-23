@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="vexar_teal">#008A75</color>
+    <color name="red">#C62828</color>
+
+    <color name="activate_background">#EFFAE2</color>
+    <color name="deactivate_background">#FFF5F5</color>
+</resources>
