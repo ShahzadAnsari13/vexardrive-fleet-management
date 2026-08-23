@@ -9,22 +9,32 @@ The application provides fleet managers with a centralized interface to manage v
 The Android application is built natively using Kotlin with a layered architecture and REST API integration.
 
 ## Screenshots
-### Splash
-![Vehicles](screenshots/VexarDrive-Splash.jpg)
-### Register
-
-![Vehicles](screenshots/VexarDrive-Register.jpg)
-
-![Vehicles](screenshots/VexarDrive-Login.jpg)
 
 ### Manager Dashboard
 
-![Manager Dashboard](screenshots/VexarDrive-dashboard.png)
+![VexarDrive Dashboard](VexarDrive-Dashboard.jpeg)
 
 ### Vehicle Management
-![Vehicles](screenshots/VexarDrive-Vehicles.jpg)
 
-![Vehicle Details](screenshots/VexarDrive-VehicleDetails.jpg)
+![Vehicles](VexarDrive-Vehicles.jpeg)
+
+![Vehicle Details](VexarDrive-VehicleDetails.jpeg)
+
+### Driver Management
+
+![Drivers](VexarDrive-Drivers.jpeg)
+
+![Driver Details](VexarDrive-DriverDetails.jpeg)
+
+### Authentication
+
+![Login](VexarDrive-Login.jpeg)
+
+![Register](VexarDrive-Register.jpeg)
+
+### Splash Screen
+
+![Splash Screen](VexarDrive-Splash.jpeg)
 
 ### Driver Management
 
